@@ -6,22 +6,33 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
     <title>Minha Enigma</title>
 </head>
 
 <body>
     <Header>
-        <img src="img/logo.png" alt="">
+        <img id="logo" src="img/logo.png" alt="">
 
     </Header>
 
     <main>
-        <textarea name="" id="texto-entrada" cols="30" rows="1">Digite seu texto</textarea>
-        <p>Apenas letras minúsculas e sem acento.</p>
-        <button type="">Criptografar</button>
-        <button>Descriptografar</button>
-
+        <div class="principal">
+            <textarea name="" id="texto-entrada" cols="30" rows="1">Digite seu texto</textarea>
+            <p><img src="img/exclama.svg" alt=""> Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div class="botoes">
+            <button id="bt-criptografa" type="">Criptografar</button>
+            <button id="bt-descriptografa">Descriptografar</button>
+        </div>
+        <section id="retangulo">
+            <img src="img/High quality products 1 1.svg" alt="">
+            <div class="legenda-img">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </section>
     </main>
     
     <footer>
@@ -31,4 +42,9 @@
         <a href="https://github.com/lbarbatto" target="_blank">Github</a> 
     </footer>
 </body>
+
+<script>
+    
+</script>
+
 </html>
