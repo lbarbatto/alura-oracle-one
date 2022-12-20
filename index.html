@@ -18,23 +18,21 @@
     </Header>
 
     <main>
-        <form>
-            <div class="principal">
-                <textarea name="" id="texto-entrada" cols="30" rows="1">Digite seu texto</textarea>
-                <p><img src="img/exclama.svg" alt=""> Apenas letras minúsculas e sem acento.</p>
+        <div class="principal">
+            <textarea name="" id="texto-entrada" cols="30" rows="1" required placeholder="Digite seu texto"></textarea>
+            <p><img src="img/exclama.svg" alt=""> Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div class="botoes">
+            <button id="bt-criptografar">Criptografar</button>
+            <button id="bt-descriptografar">Descriptografar</button>
+        </div>
+        <section id="retangulo">
+            <img src="img/High quality products 1 1.svg" alt="">
+            <div class="legenda-img">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
-            <div class="botoes">
-                <input id="bt-criptografa" type="submit" value="Criptografar">
-                <input id="bt-descriptografa" type="submit" value="Descriptografar">
-            </div>
-        </form>
-            <section id="retangulo">
-                <img src="img/High quality products 1 1.svg" alt="">
-                <div class="legenda-img">
-                    <h2>Nenhuma mensagem encontrada</h2>
-                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-                </div>
-            </section>
+        </section>
     </main>
     
     <footer>
@@ -43,10 +41,33 @@
         <a href="https://www.linkedin.com/in/leopoldo-barbato/" target="_blank">Linkedin</a>
         <a href="https://github.com/lbarbatto" target="_blank">Github</a> 
     </footer>
-</body>
 
-<script>
+    <script>
+
+        var textoEntrada = document.getElementById("texto-entrada")
+        textoEntrada.focus();
+        
+        function criptografar() {
+            alert(textoEntrada.value + " ENCRIPTOGRAFADO");
+        }
+
+        function descriptografar() {
+            alert(textoEntrada.value + " DESCRIPTOGRAFADO");
+        }
+
+        var btCriptografar = document.getElementById("bt-criptografar");
+        btCriptografar.onclick = criptografar;
+
+        var btCriptografar = document.getElementById("bt-descriptografar");
+        btCriptografar.onclick = descriptografar;
+
+
+	
+
+
+
     
-</script>
+    </script>
 
+</body>
 </html>
