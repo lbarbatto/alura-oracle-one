@@ -26,12 +26,16 @@
             <button id="bt-criptografar">Criptografar</button>
             <button id="bt-descriptografar">Descriptografar</button>
         </div>
-        <section id="retangulo">
+        <section id="retangulo-inicio">
             <img src="img/High quality products 1 1.svg" alt="">
-            <div class="legenda-img">
+            <div id="legenda-img">
                 <h2>Nenhuma mensagem encontrada</h2>
                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
+        </section>
+        <section id="retangulo-mensagem">
+            <textarea name="" id="mensagem-descriptografada" cols="30" rows="10"></textarea>
+            <button>Copiar</button>
         </section>
     </main>
     
@@ -46,13 +50,20 @@
 
         var textoEntrada = document.getElementById("texto-entrada")
         textoEntrada.focus();
+
+        function mostraTexto(esconde, mostra) {
+            document.getElementById(esconde).style.display = 'none';
+            document.getElementById(mostra).style.display = 'block';             
+        }
         
         function criptografar() {
-            alert(textoEntrada.value + " ENCRIPTOGRAFADO");
+            alert(textoEntrada.value + " CRIPTOGRAFADO");
+            mostraTexto('retangulo-inicio', 'retangulo-mensagem');
         }
 
         function descriptografar() {
             alert(textoEntrada.value + " DESCRIPTOGRAFADO");
+            mostraTexto('retangulo-inicio', 'retangulo-mensagem');
         }
 
         var btCriptografar = document.getElementById("bt-criptografar");

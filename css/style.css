@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    margin: 40px 80px;
+    margin: 40px 0px 0px 80px;
 }
 
 #texto-entrada {
@@ -16,7 +16,7 @@ body {
     width: 680px;
     height: 48px;
     left: 240px;
-    top: 168px;
+    top: 128px;
 
     border: none;
     background: #F3F5FC;
@@ -40,7 +40,7 @@ body {
     width: 252px;
     height: 18px;
     left: 240px;
-    top: 851px;
+    top: 811px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -69,7 +69,7 @@ body {
     width: 680px;
     height: 67px;
     left: 240px;
-    top: 885px;
+    top: 845px;
 
 }
 
@@ -114,26 +114,39 @@ body {
 }
 
 
-#retangulo {
+#retangulo-inicio {
+    display: block;
     position: absolute;
     width: 400px;
     height: 944px;
     left: 1000px;
-    top: 40px;
+    top: 0px;
     background: white;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
 
-#retangulo img {
+#retangulo-mensagem {
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 0px;
+    background: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#retangulo-inicio img {
     position: absolute;
     width: 336px;
     height: 304px;
     left: 32px;
-    top: 283px;
+    top: 243px;
 }
 
-.legenda-img {
+#legenda-img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -144,10 +157,10 @@ body {
     width: 336px;
     height: 122px;
     left: 32px;
-    top: 619px;
+    top: 579px;
 }
 
-#retangulo h2 {
+#retangulo-inicio h2 {
     width: 336px;
     height: 58px;
 
@@ -162,7 +175,7 @@ body {
     color: #343A40;
 }
 
-#retangulo p {
+#retangulo-inicio p {
     width: 336px;
     height: 48px;
 
@@ -183,7 +196,7 @@ footer {
     position: absolute;
     width: 1400px;
     left: 0px;
-    top: 1025px;
+    top: 985px;
     padding: 10px;
 
     font-family: 'Inter';
