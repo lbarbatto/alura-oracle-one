@@ -35,7 +35,14 @@
         </section>
         <section id="retangulo-mensagem">
             <textarea name="" id="mensagem-descriptografada" cols="30" rows="10"></textarea>
-            <button>Copiar</button>
+            <div class="tooltip">
+                <button onclick="copiarMensagem()" onmouseout="outFunc()">
+                    <span class="tooltiptext" id="myTooltip">
+                        Copiar para clipboard
+                    </span>
+                    Copiar
+                </button>
+            </div>            
         </section>
     </main>
     
@@ -57,13 +64,28 @@
         }
         
         function criptografar() {
-            alert(textoEntrada.value + " CRIPTOGRAFADO");
             mostraTexto('retangulo-inicio', 'retangulo-mensagem');
+            document.getElementById("mensagem-descriptografada").innerHTML = textoEntrada.value;
         }
 
         function descriptografar() {
             alert(textoEntrada.value + " DESCRIPTOGRAFADO");
             mostraTexto('retangulo-inicio', 'retangulo-mensagem');
+        }
+
+        function copiarMensagem() {
+            var mensagemCopiada = document.getElementById("mensagem-descriptografada");
+            mensagemCopiada.select();
+            mensagemCopiada.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(mensagemCopiada.value);
+            
+            var tooltip = document.getElementById("myTooltip");
+            tooltip.innerHTML = "Copiado: " + mensagemCopiada.value;
+        }
+
+        function outFunc() {
+            var tooltip = document.getElementById("myTooltip");
+            tooltip.innerHTML = "Copiar para clipboard";
         }
 
         var btCriptografar = document.getElementById("bt-criptografar");
