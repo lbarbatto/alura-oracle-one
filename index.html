@@ -69,11 +69,12 @@
             mostraTexto('retangulo-inicio', 'retangulo-mensagem');
 
             // Percorrre a string alterando conforme a regra. 
-            let msg = textoEntrada.value.replace(/e/g, "enter");
-            msg = msg.replace(/i/g, "imes");
-            msg = msg.replace(/a/g, "ai");
-            msg = msg.replace(/o/g, "ober");
-            msg = msg.replace(/u/g, "ufat");
+            let msg = textoEntrada.value.toLowerCase();
+            msg = msg.replace(/e/gi, "enter");
+            msg = msg.replace(/i/gi, "imes");
+            msg = msg.replace(/a/gi, "ai");
+            msg = msg.replace(/o/gi, "ober");
+            msg = msg.replace(/u/gi, "ufat");
 
             // Exibe a mensagem manipulada no retângulo lateral.
             document.getElementById("mensagem-manipulada").innerHTML = msg;
@@ -84,11 +85,12 @@
             mostraTexto('retangulo-inicio', 'retangulo-mensagem');
 
             // Percorrre a string alterando conforme a regra. 
-            let msg = textoEntrada.value.replace(/enter/g, "e");
-            msg = msg.replace(/imes/g, "i");
-            msg = msg.replace(/ai/g, "a");
-            msg = msg.replace(/ober/g, "o");
-            msg = msg.replace(/ufat/g, "u");
+            let msg = textoEntrada.value.toLowerCase();
+            msg = msg.replace(/enter/gi, "e");
+            msg = msg.replace(/imes/gi, "i");
+            msg = msg.replace(/ai/gi, "a");
+            msg = msg.replace(/ober/gi, "o");
+            msg = msg.replace(/ufat/gi, "u");
 
             // Exibe a mensagem manipulada no retângulo lateral.
             document.getElementById("mensagem-manipulada").innerHTML = msg;
