@@ -323,14 +323,6 @@ footer {
         height: 18px;
         left: 40px;
         top: 836px;
-    
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 150%;
-        color: #495057;
-        opacity: 0.8;
     }
     
     .botoes {
@@ -359,11 +351,6 @@ footer {
         height: 69px;
         left: 40px;
         top: 1001px;
-
-        background: #FFFFFF;
-
-        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-        border-radius: 32px;
     }
     
     #retangulo-mensagem {
@@ -378,11 +365,6 @@ footer {
         height: 343px;
         left: 40px;
         top: 1001px;
-
-        background: #FFFFFF;
-
-        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-        border-radius: 32px;
     }
     
     #retangulo-inicio img {
@@ -424,10 +406,128 @@ footer {
         top: 244px;
         
         width: 578px;
-        height: 67px;
+        height: 67px;   
+    }
 
+    footer {
+        display: flexbox;
+        text-align: center;
+        position: relative;
+        width: 768px;
+    }
 
-   
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        position: relative;
+        width: 375px;
+        height: auto;
+    }
+    main {
+        min-height: 60vmax;
+
+    }
+
+    header {
+        position: absolute;
+        width: 375px;
+        height: 96px;
+        left: 0px;
+        top: 0px;
+
+    }
+    #logo {
+        position: absolute;
+        left: -32px;
+        top: 0px;
+    }
+
+    #texto-entrada {
+        position: absolute;
+        width: 343px;
+        height: 240px;
+        left: 16px;
+        top: 152px;
+    }
+    
+    .principal p {
+        position: absolute;
+        width: 252px;
+        height: 18px;
+        left: 16px;
+        top: 451px;
+    }
+    
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+
+        position: absolute;
+        width: 343px;
+        height: 158px;
+        left: 16px;
+        top: 485px;    
+    }
+    
+    #retangulo-inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+        
+        position: absolute;
+        width: 263px;
+        height: 186px;
+        left: 24px;
+        top: 707px;
+    }
+    
+    #retangulo-mensagem {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+        
+        position: absolute;
+        width: 263px;
+        height: 595px;
+        left: 24px;
+        top: 707px;
+    }
+    
+    #retangulo-inicio img {
+        display: none;
+    }
+    
+    
+    #retangulo-inicio h2 {  
+        width: 263px;
+        height: 122px;  
+    }
+    
+    #retangulo-inicio p {
+        width: 263px;
+        height: 122px;
+    }
+    
+    #mensagem-manipulada {
+        position: absolute;
+        width: 263px;
+        height: 432px;
+    }
+    
+    #retangulo-mensagem button {
+        left: -8px;
+        top: 496px;
+        
+        width: 279px;
+        height: 67px;   
     }
 
     footer {
@@ -435,15 +535,7 @@ footer {
         text-align: center;
         position: relative;
         float: inline-start;
-        width: 768px;
-        padding: 10px;   
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 19px;
-        text-align: center;
-        color: #0A3871;
+        width: auto;
     }
 
 }
