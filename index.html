@@ -34,7 +34,7 @@
             </div>
         </section>
         <section id="retangulo-mensagem">
-            <textarea name="" id="mensagem-descriptografada" cols="30" rows="10"></textarea>
+            <textarea name="" id="mensagem-manipulada" cols="30" rows="10"></textarea>
             <div class="tooltip">
                 <button onclick="copiarMensagem()" onmouseout="outFunc()">
                     <span class="tooltiptext" id="myTooltip">
@@ -64,17 +64,37 @@
         }
         
         function criptografar() {
+            // Troca a exibição no retângulo lateral - imagem pela mensagem.
             mostraTexto('retangulo-inicio', 'retangulo-mensagem');
-            document.getElementById("mensagem-descriptografada").innerHTML = textoEntrada.value;
+
+            // Percorrre a string alterando conforme a regra. 
+            let msg = textoEntrada.value.replace(/e/g, "enter");
+            msg = msg.replace(/i/g, "imes");
+            msg = msg.replace(/a/g, "ai");
+            msg = msg.replace(/o/g, "ober");
+            msg = msg.replace(/u/g, "ufat");
+
+            // Exibe a mensagem manipulada no retângulo lateral.
+            document.getElementById("mensagem-manipulada").innerHTML = msg;
         }
 
         function descriptografar() {
-            alert(textoEntrada.value + " DESCRIPTOGRAFADO");
+            // Troca a exibição no retângulo lateral - imagem pela mensagem.
             mostraTexto('retangulo-inicio', 'retangulo-mensagem');
+
+            // Percorrre a string alterando conforme a regra. 
+            let msg = textoEntrada.value.replace(/enter/g, "e");
+            msg = msg.replace(/imes/g, "i");
+            msg = msg.replace(/ai/g, "a");
+            msg = msg.replace(/ober/g, "o");
+            msg = msg.replace(/ufat/g, "u");
+
+            // Exibe a mensagem manipulada no retângulo lateral.
+            document.getElementById("mensagem-manipulada").innerHTML = msg;
         }
 
         function copiarMensagem() {
-            var mensagemCopiada = document.getElementById("mensagem-descriptografada");
+            var mensagemCopiada = document.getElementById("mensagem-manipulada");
             mensagemCopiada.select();
             mensagemCopiada.setSelectionRange(0, 99999);
             navigator.clipboard.writeText(mensagemCopiada.value);
