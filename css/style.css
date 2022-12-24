@@ -18,7 +18,7 @@ body {
     left: 240px;
     top: 128px;
 
-    resize: vertical;
+    resize: none;
 
     border: none;
     background: #F3F5FC;
@@ -199,6 +199,7 @@ body {
     left: 32px;
     top: 32px;
     text-align: start;
+    resize: none;
 
     font-family: 'Inter';
     font-style: normal;
@@ -287,4 +288,162 @@ footer {
     line-height: 19px;
     text-align: center;
     color: #0A3871;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        display: flex;
+        min-height: 42vmax;
+
+    }
+    #logo {
+        position: absolute;
+        right: 90.74%;
+        top: 6.25%;
+        bottom: 89.8%;
+    }
+
+    #texto-entrada {
+        position: absolute;
+        width: 688px;
+        height: 400px;
+        top: 240px;
+        left: 40px;
+    }
+    
+    .principal p {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+
+        position: absolute;
+        width: 252px;
+        height: 18px;
+        left: 40px;
+        top: 836px;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #495057;
+        opacity: 0.8;
+    }
+    
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+
+        position: absolute;
+        width: 688px;
+        height: 67px;
+        left: 40px;
+        top: 870px;    
+    }
+    
+    #retangulo-inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+
+        position: absolute;
+        width: 624px;
+        height: 69px;
+        left: 40px;
+        top: 1001px;
+
+        background: #FFFFFF;
+
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+    
+    #retangulo-mensagem {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+
+        position: absolute;
+        width: 624px;
+        height: 343px;
+        left: 40px;
+        top: 1001px;
+
+        background: #FFFFFF;
+
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+    
+    #retangulo-inicio img {
+        display: none;
+    }
+    
+    #legenda-img {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+
+        position: relative;
+        width: 624px;
+        height: 69px;
+        left: auto;
+        top: auto;
+    }
+    
+    #retangulo-inicio h2 {  
+        width: 624px;
+        height: 29px;  
+    }
+    
+    #retangulo-inicio p {
+        width: 624px;
+        height: 24px;
+    }
+    
+    #mensagem-manipulada {
+        position: absolute;
+        width: 624px;
+        height: 180px;
+    }
+    
+    #retangulo-mensagem button {
+        left: 32px;
+        top: 244px;
+        
+        width: 578px;
+        height: 67px;
+
+
+   
+    }
+
+    footer {
+        display: flexbox;
+        text-align: center;
+        position: relative;
+        float: inline-start;
+        width: 768px;
+        padding: 10px;   
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        color: #0A3871;
+    }
+
 }
