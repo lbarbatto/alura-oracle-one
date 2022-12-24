@@ -293,7 +293,7 @@ footer {
 @media only screen and (max-width: 768px) {
     main {
         display: flex;
-        min-height: 42vmax;
+        height: 500px;
 
     }
     #logo {
@@ -413,7 +413,7 @@ footer {
         display: flexbox;
         text-align: center;
         position: relative;
-        width: 768px;
+        width: 748px;
     }
 
 }
