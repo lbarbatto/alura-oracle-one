@@ -504,6 +504,10 @@ footer {
     #retangulo-inicio img {
         display: none;
     }
+
+    #legenda-img {
+        width: 263px;
+    }
     
     
     #retangulo-inicio h2 {  
