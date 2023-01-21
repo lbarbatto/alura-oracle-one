@@ -1,7 +1,14 @@
-# alura-oracle-one
-Challenges Oracle One - Projeto desenvolvido com Javascript, css e html.
-
-https://lbarbatto.github.io/alura-oracle-one
+![Badges Oracle One](https://user-images.githubusercontent.com/51752445/213848459-ba359855-1505-4f1c-a533-e59787d6fb21.png)
+# Programa ONE - Oracle Next Education.
+### Iniciante em Programação - Turma 4.
+### Challenge Decodificador.
+#### Autor: [Leopoldo Barbato](mailto:leopoldo.barbato@gmail.com "E-mail")
+#### Página: [Decodificador](https://lbarbatto.github.io/alura-oracle-one "Decodificador")
+  
+## Tecnologias Utilizadas:
+- HTML
+- CSS
+- JavaScript
 
 Desenvolvi esta aplicação que criptografa textos como parte do processo do programa "Iniciante em Programação T4 - ONE".
 O porjeto seguiu as seguintes definições: 
