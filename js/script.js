@@ -1,4 +1,4 @@
-//Instancia uma matriz com as chaves para emcriptação. 
+//Instancia uma matriz com as chaves para encriptação. 
 const matrizChave = [["e", "enter"], ["i" , "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
 
 //Constante que recebe o texto de entrada.
@@ -11,7 +11,7 @@ function mostraTexto(esconde, mostra) {
     document.getElementById(mostra).style.display = 'block';             
 }
 
-//Funçaõ de acionamento do botão para criptografar
+//Função de acionamento do botão para criptografar
 function btCriptografar() {
     //Chama a função para criptografar passando o texto de entrada como argumento.
     const mensagemFinal = criptografar(textoEntrada.value);
